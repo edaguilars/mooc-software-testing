@@ -11,7 +11,12 @@ public class NumFinderMain {
         // this crashes
         nf.find(new int[] {4, 3, 2, 1});
 
-        System.out.println(nf.getLargest());
-        System.out.println(nf.getSmallest());
+        // Corner cases, for testing purposes:
+        //nf.find(new int[] {});  // Passing a null
+        //nf.find(new int[] {5, 5, 5, 5, 5, 5});  // Passing equal values
+
+
+        System.out.println("Largest: " + nf.getLargest());
+        System.out.println("Smallest: " + nf.getSmallest());
     }
 }
